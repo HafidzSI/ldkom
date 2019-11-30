@@ -54,7 +54,12 @@
 	<script src="{{ asset('/frontend') }}/assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
 	<script src="{{ asset('/frontend') }}/assets/vendor/chartist/js/chartist.min.js"></script>
 	<script src="{{ asset('/frontend') }}/assets/scripts/klorofil-common.js"></script>
-    @yield('js')
+	<script>
+		@if(Session::has('success'))
+			
+		@endif
+	</script>
+	@yield('js')
 </body>
 
 </html>
